@@ -1,6 +1,19 @@
 package com.wubaoguo.springboot.bean;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
+	/** 
+	* @Fields serialVersionUID : TODO(用一句话描述这个变量表示什么) 
+	*/ 
+	private static final long serialVersionUID = 1L;
+	
+	public User(String id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
 	private String id;  
     private String name;  
   
