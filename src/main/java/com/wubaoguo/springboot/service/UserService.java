@@ -12,6 +12,13 @@ public interface UserService {
      * @param name
      */
     void deleteByName(String name);
+    
+    /**
+     * 根据name获取用户
+     * @param name
+     */
+    Integer findAgeByName(String name);
+    
     /**
      * 获取用户总量
      */

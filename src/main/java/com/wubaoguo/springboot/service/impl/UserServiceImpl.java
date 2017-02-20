@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService{
 		 jdbcTemplate.update("delete from USER");
 	}
 
+	@Override
+	public Integer findAgeByName(String name) {
+		return Integer.valueOf(jdbcTemplate.queryForMap("select age from USER where NAME = ? ", name, Integer.class).get("age").toString());
+	}
+
 }
