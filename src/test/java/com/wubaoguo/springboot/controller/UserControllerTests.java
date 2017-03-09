@@ -16,7 +16,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.wubaoguo.springboot.controller.UserController;
+import com.wubaoguo.springboot.controller.JPAUserController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = MockServletContext.class)
@@ -26,7 +26,7 @@ public class UserControllerTests {
 	
 	@Before 
     public void setUp() throws Exception { 
-        mvc = MockMvcBuilders.standaloneSetup(new UserController()).build(); 
+        mvc = MockMvcBuilders.standaloneSetup(new JPAUserController()).build(); 
     } 
 	
 	@Test 
