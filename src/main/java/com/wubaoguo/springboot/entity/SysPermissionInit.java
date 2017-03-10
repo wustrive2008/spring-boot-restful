@@ -1,4 +1,4 @@
-package com.wubaoguo.springboot.entry;
+package com.wubaoguo.springboot.entity;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableField;

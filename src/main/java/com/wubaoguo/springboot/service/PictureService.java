@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.wubaoguo.springboot.dao.PictureMapper;
-import com.wubaoguo.springboot.entry.Picture;
+import com.wubaoguo.springboot.entity.Picture;
 
 /**
  * <p>

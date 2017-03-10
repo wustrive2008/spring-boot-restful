@@ -1,7 +1,7 @@
 package com.wubaoguo.springboot.dao;
 
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.wubaoguo.springboot.entry.Picture;
+import com.wubaoguo.springboot.entity.Picture;
 
 /**
  * <p>

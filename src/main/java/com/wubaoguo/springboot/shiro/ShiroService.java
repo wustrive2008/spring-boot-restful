@@ -11,7 +11,7 @@ import org.apache.shiro.web.servlet.AbstractShiroFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wubaoguo.springboot.entry.SysPermissionInit;
+import com.wubaoguo.springboot.entity.SysPermissionInit;
 import com.wubaoguo.springboot.service.SysPermissionInitService;
 
 

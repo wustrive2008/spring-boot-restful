@@ -1,4 +1,4 @@
-package com.wubaoguo.springboot.entry;
+package com.wubaoguo.springboot.entity;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -13,20 +13,20 @@ import java.io.Serializable;
  * @author z77z
  * @since 2017-02-13
  */
-@TableName("sys_permission")
-public class SysPermission extends Model<SysPermission> {
+@TableName("sys_role_permission")
+public class SysRolePermission extends Model<SysRolePermission> {
 
     private static final long serialVersionUID = 1L;
 
 	private String id;
     /**
-     * url地址
+     * 角色ID
      */
-	private String url;
+	private String rid;
     /**
-     * url描述
+     * 权限ID
      */
-	private String name;
+	private String pid;
 
 
 	public String getId() {
@@ -37,20 +37,20 @@ public class SysPermission extends Model<SysPermission> {
 		this.id = id;
 	}
 
-	public String getUrl() {
-		return url;
+	public String getRid() {
+		return rid;
 	}
 
-	public void setUrl(String url) {
-		this.url = url;
+	public void setRid(String rid) {
+		this.rid = rid;
 	}
 
-	public String getName() {
-		return name;
+	public String getPid() {
+		return pid;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 
 	@Override

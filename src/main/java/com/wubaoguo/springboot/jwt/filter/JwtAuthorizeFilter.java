@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.tomcat.util.net.jsse.openssl.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import com.wubaoguo.springboot.conf.JwtConfig;
 import com.wubaoguo.springboot.exception.LoginSecurityException;
@@ -24,7 +22,6 @@ import com.wubaoguo.springboot.response.StateMap;
 import com.wubaoguo.springboot.response.ViewResult;
 import com.wubaoguo.springboot.util.WebUtil;
 
-@Component
 public class JwtAuthorizeFilter implements Filter{
 
     @Autowired

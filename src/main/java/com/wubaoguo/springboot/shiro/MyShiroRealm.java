@@ -22,7 +22,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.SimplePrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.wubaoguo.springboot.entry.SysUser;
+import com.wubaoguo.springboot.entity.SysUser;
 import com.wubaoguo.springboot.service.SysPermissionService;
 import com.wubaoguo.springboot.service.SysRoleService;
 import com.wubaoguo.springboot.service.SysUserService;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.plugins.Page;
-import com.wubaoguo.springboot.entry.BeautifulPictures;
+import com.wubaoguo.springboot.entity.BeautifulPictures;
 import com.wubaoguo.springboot.service.BeautifulPicturesService;
 
 

@@ -16,7 +16,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
 import org.apache.shiro.web.util.WebUtils;
 
-import com.wubaoguo.springboot.entry.SysUser;
+import com.wubaoguo.springboot.entity.SysUser;
 
 /**
  * @author 作者 z77z

@@ -22,8 +22,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.wubaoguo.springboot.entry.BeautifulPictures;
-import com.wubaoguo.springboot.entry.Picture;
+import com.wubaoguo.springboot.entity.BeautifulPictures;
+import com.wubaoguo.springboot.entity.Picture;
 import com.wubaoguo.springboot.service.BeautifulPicturesService;
 import com.wubaoguo.springboot.service.PictureService;
 import com.wubaoguo.springboot.util.CrawlerUtil;

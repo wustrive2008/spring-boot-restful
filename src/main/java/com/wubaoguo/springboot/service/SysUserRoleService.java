@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.wubaoguo.springboot.dao.SysUserRoleMapper;
-import com.wubaoguo.springboot.entry.SysUserRole;
+import com.wubaoguo.springboot.entity.SysUserRole;
 
 /**
  * <p>

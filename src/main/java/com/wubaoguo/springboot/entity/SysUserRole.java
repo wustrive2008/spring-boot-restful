@@ -1,4 +1,4 @@
-package com.wubaoguo.springboot.entry;
+package com.wubaoguo.springboot.entity;
 
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -13,20 +13,20 @@ import java.io.Serializable;
  * @author z77z
  * @since 2017-02-13
  */
-@TableName("sys_role")
-public class SysRole extends Model<SysRole> {
+@TableName("sys_user_role")
+public class SysUserRole extends Model<SysUserRole> {
 
     private static final long serialVersionUID = 1L;
 
 	private String id;
     /**
-     * 角色名称
+     * 用户ID
      */
-	private String name;
+	private String uid;
     /**
-     * 角色类型
+     * 角色ID
      */
-	private String type;
+	private String rid;
 
 
 	public String getId() {
@@ -37,20 +37,20 @@ public class SysRole extends Model<SysRole> {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getUid() {
+		return uid;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUid(String uid) {
+		this.uid = uid;
 	}
 
-	public String getType() {
-		return type;
+	public String getRid() {
+		return rid;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setRid(String rid) {
+		this.rid = rid;
 	}
 
 	@Override

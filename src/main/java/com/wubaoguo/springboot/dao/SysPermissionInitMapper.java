@@ -3,7 +3,7 @@ package com.wubaoguo.springboot.dao;
 import java.util.List;
 
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.wubaoguo.springboot.entry.SysPermissionInit;
+import com.wubaoguo.springboot.entity.SysPermissionInit;
 
 /**
  * <p>

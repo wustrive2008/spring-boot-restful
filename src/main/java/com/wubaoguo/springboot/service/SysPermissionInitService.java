@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.wubaoguo.springboot.dao.SysPermissionInitMapper;
-import com.wubaoguo.springboot.entry.SysPermissionInit;
+import com.wubaoguo.springboot.entity.SysPermissionInit;
 
 /**
  * <p>

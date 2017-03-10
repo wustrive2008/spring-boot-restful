@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.wubaoguo.springboot.entry.SysPermissionInit;
+import com.wubaoguo.springboot.entity.SysPermissionInit;
 import com.wubaoguo.springboot.service.SysPermissionInitService;
 import com.wubaoguo.springboot.shiro.MyShiroRealm;
 import com.wubaoguo.springboot.shiro.filter.KickoutSessionControlFilter;
