@@ -6,7 +6,6 @@ import java.util.Map;
 import javax.mail.internet.MimeMessage;
 
 import org.apache.commons.collections.map.HashedMap;
-import org.apache.velocity.app.VelocityEngine;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +16,12 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.ui.velocity.VelocityEngineUtils;
+import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 
 import com.wubaoguo.springboot.Application;
+import com.wubaoguo.springboot.conf.FreeMarkerConfig;
+
+import freemarker.template.Template;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -29,7 +31,7 @@ public class MailTest {
 	private JavaMailSender mailSender;
 	
 	@Autowired
-	private VelocityEngine velocityEngine;
+	private FreeMarkerConfig freeMarkerConfigurer;
 	
 	@Test
 	public void sendSimpleMail() throws Exception {
@@ -64,8 +66,8 @@ public class MailTest {
 		helper.setSubject("主题：springboot-模板邮件");
 		Map<String, Object> model = new HashedMap();
 		model.put("username", "张三");
-		String text = VelocityEngineUtils.mergeTemplateIntoString(
-				velocityEngine, "template.vm", "UTF-8", model);
+		Template template = freeMarkerConfigurer.getConfiguration().getTemplate("template.ftl"); 
+		String text = FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
 		helper.setText(text, true);
 		mailSender.send(mimeMessage);
 	}

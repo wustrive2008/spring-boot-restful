@@ -1,14 +1,11 @@
 package com.wubaoguo.springboot.conf;
 
-import java.io.File;
 import java.io.IOException;
 
 import javax.annotation.PostConstruct;
-import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.context.ContextLoader;
 
 import freemarker.ext.beans.BeansWrapper;
 import freemarker.template.DefaultObjectWrapperBuilder;
@@ -61,7 +58,7 @@ public class FreeMarkerConfig {
         //configuration.setServletContextForTemplateLoading(servletContext, "/WEB-INF/ftl/");
         
         //解析前缀后XXX路径下的jsp文件 
-        springResolver.setPrefix("");  
+        springResolver.setPrefix("/WEB-INF/view/");  
         springResolver.setSuffix(".jsp");  
         springResolver.setOrder(1);  
         
@@ -70,5 +67,9 @@ public class FreeMarkerConfig {
         resolver.setCache(false);
         resolver.setRequestContextAttribute("request");
         resolver.setOrder(0);  
+	}
+	
+	public freemarker.template.Configuration getConfiguration(){
+		return configuration;
 	}
 }
