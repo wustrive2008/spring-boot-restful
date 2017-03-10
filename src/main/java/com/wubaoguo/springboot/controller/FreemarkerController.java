@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/freemarker")
 public class FreemarkerController {
 	
-	@Value("${application.message}")
+    @Value("${application.message}")
 	private String message;
 	
 	@RequestMapping(value="/index")

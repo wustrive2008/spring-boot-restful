@@ -166,6 +166,13 @@
 			<version>2.4.2.1-RELEASE</version>
 		</dependency>
 		
+		<!-- jwt -->
+        <dependency>
+		    <groupId>com.nimbusds</groupId>
+		    <artifactId>nimbus-jose-jwt</artifactId>
+		    <version>4.23</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>spring-boot-restful</finalName>
