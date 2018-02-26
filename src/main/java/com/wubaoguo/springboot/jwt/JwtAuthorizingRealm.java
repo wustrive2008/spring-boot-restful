@@ -33,7 +33,7 @@ public class JwtAuthorizingRealm {
     
     /**
      * 登录认证  app 具体认证策略交给 具体业务实现
-     * @param appAuthentication
+     * @param auth
      * @return
      */
     public ViewResult doAuthentication(JwtAuthentication auth) throws LoginSecurityException {
@@ -65,7 +65,7 @@ public class JwtAuthorizingRealm {
      * 
      *  默认解密 采用jwt方法 若切换其他加密策略 重写此方法
      * 
-     * @param appAuthentication
+     * @param auth
      * @return
      * @throws LoginSecurityException
      */
