@@ -28,11 +28,6 @@ import com.wubaoguo.springboot.service.BeautifulPicturesService;
 import com.wubaoguo.springboot.service.PictureService;
 import com.wubaoguo.springboot.util.CrawlerUtil;
 
-/**
- * 美女图片爬虫（使用Junit方式启动此爬虫）
- * @author z77z
- *
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(Application.class)
 @WebAppConfiguration
